@@ -32,5 +32,6 @@ exports.generalFields = {
     username: zod_1.default.string().min(2).max(100),
     email: zod_1.default.email(),
     password: zod_1.default.string().min(6).max(100),
-    confirmPassword: zod_1.default.string().min(6).max(100)
+    confirmPassword: zod_1.default.string().min(6).max(100),
+    otp: zod_1.default.string().regex(/^\d{6}/)
 };

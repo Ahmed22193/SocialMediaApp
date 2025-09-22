@@ -19,6 +19,11 @@ export class BadRequestException extends ApplicationException {
         super(message, 400, options);
     }
 }
+export class ConfilectException extends ApplicationException {
+    constructor(message: string, options?: ErrorOptions) {
+        super(message, 409, options);
+    }
+}
 export class NotFoundException extends ApplicationException {
     constructor(message: string, options?: ErrorOptions) {
         super(message, 404, options);
